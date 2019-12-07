@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Westside Volley</title>
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <link rel="stylesheet" media="screen and (mid-width: 1100px)" href="css/widescreen.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/glitch.css">
+</head>
+<body id="home">
+  <audio>
+      <source src="2Pac-HitEmUpDirtyOfficialVideoHD.ogg" type="audio/ogg" id="myAudio">
+  </audio>
+
+  <nav id="navbar">
+    <div class="nav-logo">
+      <img src="img/main-logo.png" alt="navbar logo">
+    </div>
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#mission">MISSION</a></li>
+      <li><a href="#teams">TEAMS</a></li> 
+      <li><a href="#locations">LOCATION</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!--Header: showcase-->
+  <header id="showcase">
+    <div class="showcase-content">
+      <h1>BECOME A PART OF<br>THE FAMILY</h1>
+    </div>
+  </header>
+
+  <!--Video--> 
+  <div id="home" class="video-section grey-background">
+    <img src="img/vid-pic.png" alt="">
+  </div>
+
+  <!--Mission-->
+  <div id="mission" class="mission-section">
+    <div class="mission-wrapper">
+      <img class="mission-image show-on-scroll" src="img/familyphoto.png" alt="">
+      <div class="mission-text">
+        <h1 class="title-header">OUR MISSION</h1>
+        <p >Westside is all about providing a home for volleyball players to play, learn and have fun. Whether you are still discovering the game, or a veteran of the sport, we'll make sure that you feel like a part of the Westside crew. We know that in NSW it can be hard to find a place to play and improve in the west, so we try and cater to all of the players out in the Sydney South West region. Check out where you can find us in the <a href="#locations">locations</a> section.</p>
+      </div>
+      <img class="polypattern" src="img/polypattern.png" alt="">
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <!--Teams-->
+
+  <div id="teams" class="teams-section grey-background">
+    <h1 class="title-header">OUR TEAMS</h1>
+    <div class="teams-wrapper">
+      <div class="grid-item">
+        <div id="woman" class="grid-pic"></div>
+        <p id="woman-text" class="team-title">WOMEN</p>
+        <p id="woman-info" class="team-info">We have two womens teams at Westside, our Honours level girls and the Division 2 girls. As with all of our teams, the women play at tournaments, travelling around Austrlia as well as in the Sydney Volleyball League (SVL).</p>
+      </div>
+      <div class="grid-item">
+        <div id="junior" class=" grid-pic"></div>
+        <p id="junior-text" class="team-title">JUNIOURS</p>
+        <p id="juniour-info" class="team-info">At Westside we have a lot of juniour and development teams which train to improve and then play in competetions around town. Some of the juniours play in SVL as a part of our mens and womens teams.</p>
+      </div>
+      <div class="grid-item">
+        <div id="man" class=" grid-pic"></div>
+        <p id="man-text" class="team-title">MEN</p>
+        <p id="man-info" class="team-info">We have a lot of Mens teams of ranging divisions which compete in tounraments as well as SVL.</p>
+      </div>
+      
+    </div>
+  </div>
+
+  <!--Locations-->
+  <div id="locations">
+    <h1 class="title-header">OUR LOCATIONS</h1>
+    <div class="locations-wrapper">
+      <img src="img/Group 36.png" alt=""> 
+      <div class="map-section">
+        <div class="map"></div>
+      </div>
+      <ul>
+        <li id="Cabramatta"> <a class="location-link" href="">Cabramatta</a></li>
+        <li id="MacFields"> <a class="location-link" href="">Macquarie Fields</a></li>
+        <li id="Fairfield"> <a class="location-link" href="">Fairfield</a></li>
+        <li id="EagleVale"> <a  href="">Eagle Vale</a></li>
+      </ul>
+      <div class="address-block">
+        <p id="address-name">Fairfield-Cabramatta PCYC</p>
+        <p id="address">Railway Parade &, McBurney Rd, Cabramatta NSW 2166</p>
+        <p id="training-time">Saturday: <br>
+            Juniour Training 9:00 AM - 11AM <br>
+            Men's Training   11:00AM - 1:00PM
+            </p>
+      </div>
+    </div>
+  </div>
+
+  <!--Contact US-->
+  <div class="" id="contact">
+    <div class="contact-wrapper">
+      <h1 class="title-header">CONTACT US!</h1>
+      <div class="alert alert-warning" role="alert" id="alert-box">
+      </div>
+      <form method="POST" action="https://formspree.io/newwestsideform@gmail.com" class="contact-form">
+        <div class="form-group">
+          <label for="fname">Name</label>
+          <input name="fname" type="text" id="fname" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input name="email" type="email" id="email" placeholder="Enter Email">
+          <p class="checker" id="email-checker"></p>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell us about yourself</label>
+          <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+        </div>
+        <input id="send-btn" type="submit" value="Send" class="btn btn-warning">
+      </form>
+    </div>
+    <div class="sponsors-block">
+      <img src="img/backdrop.jpg" alt="">
+    </div>
+  </div>
+
+  <footer>
+    <p>Westside Volleyball Club</p>
+    <p>All Rights Reserved 2019</p>
+  </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4FHebW5_kdfB92BD6lkSV0ViqgLyYqXc&callback=initMap"
+    async defer></script>
+</body>
+</html>
+
+<!--AIzaSyA4FHebW5_kdfB92BD6lkSV0ViqgLyYqXc-->
+  <!--Teams-->
+  <!--<div class="teams-section">
+      <h1 class="teams-header ">OUR TEAMS</h1>
+      <div class="teams-wrapper">
+        <div class="woman grid-item"><h1>WOMEN</h1></div>
+        <div class="man grid-item"><h1>MEN</h1></div>
+        <div class="junior grid-item"><h1>JUNIOUR</h1></div>
+      </div>
+    </div>-->
+
+  <!--Sponsors-->
+  <!--<div id="sponsors">
+      <h1 class="sponsors-header">OUR SPONSORS</h1>
+      <div class="sponsors-wrapper">
+        <div><img src="/img/gen-logo.png" alt=""></div>
+        <div><img src="/img/gen-logo.png" alt=""></div>
+        <div><img src="/img/gen-logo.png" alt=""></div>
+        <div><img src="/img/gen-logo.png" alt=""></div>
+        <div><img src="/img/gen-logo.png" alt=""></div>
+        <div><img src="/img/gen-logo.png" alt=""></div>
+
+      </div>
+    </div>-->
+    

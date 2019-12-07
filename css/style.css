@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    background: url("../img/Group 37.png") no-repeat center center/cover;
+}
+
+h1, h2 {
+    font-family: Oswald, sans-serif;
+}
+
+.title-header {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    color:#053CBA;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+.grey-background {
+    background: #EAEBF1;
+}
+
+/* Utility */
+.primary-colour {
+    color: #053CBA;
+}
+
+.secondary-colour {
+    color: #FFE000;
+}
+
+/* Navbar */
+#navbar {
+    top: 0;
+    background: rgba(5, 59, 186, 0);
+    color: #C2D1F2;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+}
+
+#navbar .nav-logo img {
+    height: 4rem;
+    padding-left: 1rem;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li a {
+    color: #f4f4f4;
+    padding: 0.75rem;
+    margin: 0 2rem;
+    transition: 0.2s ease-in;
+}
+
+#navbar ul li a:hover {
+    color: white;
+}
+
+/* Showcase */
+
+#showcase {
+    background: #333 url(../img/backdrop-hands.png) no-repeat center center/cover;
+    height: 100vh;
+    margin-top: -6.3rem;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+#showcase h1 {
+    color: white;
+    font-size: 5.5rem;
+    font-style: italic;
+    line-height: 1.1;
+    padding-left: 5rem;
+    border-left: 2rem solid rgba(255, 225, 0);
+}
+
+.butn {
+    display:inline-block;
+    margin-top: 3rem;
+    background: rgba(255, 225, 0, .65);
+    padding: 0.5rem 2rem;
+    font-weight: 100;
+    width: 45%;
+    text-align: center;
+    border: none;
+}
+
+
+.butn:hover {
+    background: rgba(255, 225, 0);
+    cursor: pointer;
+    font-style: italic;
+    transition: 0.2s ease;
+}
+
+/* Video Clip */
+.video-section{
+    height: 120vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.video-section img {
+    height: 70%;
+    margin:auto;
+}
+
+/* Mission */
+.mission-wrapper {
+    width: 100%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mission-text {
+    width: 35%;
+}
+
+.mission-image {
+    width: 55%;
+    transform: translateX(-10rem) scale(0.5);
+    opacity: 0;
+    transition: transform 2s 0s cubic-bezier(0,1,.3,1);
+}
+
+.mission-image.is-visible {
+    opacity: 1;
+    transform:  translateX(0rem) scale(1);
+}
+
+.polypattern {
+    width: 5%;
+    height:100%;
+}
+
+/* Teams */
+.teams-section {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.teams-section h1 {
+    padding-top: 1rem;
+}
+
+.teams-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+.grid-item {
+    height: 100%;
+    width: 30%;
+    margin: 0 1rem;
+    border: 4px solid white;
+    border-radius: 4px;
+    position: center;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(107,100,133,1);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(107,100,133,1);
+    box-shadow: 0px 0px 17px 0px rgba(107,100,133,1);
+}
+
+.grid-pic {
+    transition: ease 0.3s;
+    min-height: 100%;
+    width: 100%;
+    transition: ease-in-out  0s 0.3s;
+}
+
+.grid-pic:hover {
+    filter: grayscale(70%) blur(2px) brightness(50%);
+    transition: ease-in-out 0.3s;
+}
+
+#woman {
+    background: url('../img/woman.png') no-repeat center center/cover;
+}
+
+#man {
+    background: url('../img/men.png') no-repeat center center/cover;
+}
+
+
+#junior {
+    background: url('../img/junior.png') no-repeat center center/cover;
+}
+
+.team-title {
+    opacity: 0;
+    transition: ease-in-out 0.4s;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.team-info {
+    opacity: 0;
+    transition: ease-in-out 0.05s 0.4s;
+    color: white;
+    width: 80%;
+    text-align: center;
+    margin:auto;
+}
+
+  
+/* Sponsors */
+#sponsors {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.sponsors-wrapper {
+    display:flex;
+    margin:auto;
+    justify-content: space-between;
+}
+
+.sponsors-wrapper img {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+.sponsors-header {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 6rem;
+}
+
+
+/* Locations */
+
+#locations {
+    margin-top: 6rem;
+    height: 500px;
+    margin-bottom: 6rem;
+}
+
+#locations h1 {
+    margin-left: 7rem;
+    margin-bottom: -3rem;
+}
+
+#locations ul {
+    list-style-type: none;
+    width: 13%;
+}
+
+#locations ul li {
+    padding: 1rem;
+}
+
+
+.locations-wrapper {
+    height: 100%;
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-evenly;
+}
+
+.locations-wrapper > img {
+    height: 100%;
+}
+
+.locations-wrapper > .map-section {
+    height: 75%;
+    width: 60%;
+    margin: auto 3rem;
+}
+
+.map {
+    height:100%;
+}
+
+.locations-wrapper > ul {
+    display: block;
+    width: 15%;
+    margin: auto;
+}
+
+.locations-wrapper .address-block {
+    display: block;
+    margin: auto;
+    width: 15%;
+    padding-right: 3rem;
+}
+
+/* Contact */
+#contact {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+
+#contact input, textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-wrapper {
+    width: 50%;
+}
+
+.sponsors-block {
+    width: 50%;
+}
+
+.sponsors-block img {
+    width : 80%;
+    float: right;
+}
+
+footer {
+    margin-top: 4rem;
+    padding: 1rem;
+    background-color: #323232;
+    color: white;
+}
+
+.checker {
+    font-size: 0.7rem;
+    margin-top: -0.3rem;
+    color:red;
+}
+
+#alert-box {
+    display: none;
+}
+
+.btn-warning {
+    background-color: rgb(255, 230, 0);
+    color: #053CBA;
+}
+
+.btn-warning:focus {
+    color: #053CBA;
+}
+
+.btn-warning:hover {
+    background-color: rgb(255, 196, 0);
+    color: #053CBA;
+}
